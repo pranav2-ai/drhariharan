@@ -5,7 +5,7 @@ const reviews = [
   },
   {
     text: `"Dr. Hariharan thoroughly explains treatments and ensures the best possible care. I'm grateful for his expertise."`,
-    patient: "Rajesh Kumar - Patient for 5 years"
+    patient: "Pranav Ganesh.H - Patient for 5 years"
   },
   {
     text: `"I've seen tremendous improvements in my health under Dr. Hariharan’s guidance. His preventative approach makes a huge difference."`,
