@@ -87,38 +87,3 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ✅ Matrix Scramble Looping Effect
-document.addEventListener("DOMContentLoaded", () => {
-  const el = document.getElementById("matrix-title");
-  const originalText = el.textContent;
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-  let interval = null;
-
-  function scrambleOnce() {
-    let frame = 0;
-    clearInterval(interval);
-
-    interval = setInterval(() => {
-      let output = "";
-      for (let i = 0; i < originalText.length; i++) {
-        if (i < frame) {
-          output += originalText[i];
-        } else if (originalText[i] === " ") {
-          output += " ";
-        } else {
-          output += chars[Math.floor(Math.random() * chars.length)];
-        }
-      }
-
-      el.textContent = output;
-      frame++;
-
-      if (frame > originalText.length) {
-        clearInterval(interval);
-      }
-    }, 60);
-  }
-
-  scrambleOnce();
-  setInterval(scrambleOnce, 1500); // repeat every 10 seconds
-});
