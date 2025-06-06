@@ -617,3 +617,20 @@ body {
     padding: 0 10px;
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#matrix-title {
+  color: #00ff99;
+  letter-spacing: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  text-shadow: 0 0 5px #00ff99;
+}
